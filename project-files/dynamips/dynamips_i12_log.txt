@@ -1,0 +1,33 @@
+Nov 24 23:04:41.707 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Nov 24 23:04:41.707 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38461.
+Nov 24 23:04:41.745 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 24 23:04:41.746 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips 
+Nov 24 23:04:41.746 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips
+Nov 24 23:04:41.749 HYPERVISOR: exec_cmd: vm create R5 12 c3725 
+Nov 24 23:04:41.749 VM: VM R5 created.
+Nov 24 23:04:41.751 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5003 
+Nov 24 23:04:41.771 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Nov 24 23:04:41.788 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Nov 24 23:04:41.790 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Nov 24 23:04:41.791 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 24 23:04:41.792 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60a68e70 
+Nov 24 23:04:41.794 HYPERVISOR: exec_cmd: vm set_ios R5 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 24 23:04:41.804 HYPERVISOR: exec_cmd: vm set_config R5 configs/i12_startup-config.cfg 
+Nov 24 23:22:10.852 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 24 23:22:10.866 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Nov 24 23:30:38.684 HYPERVISOR: exec_cmd: nio create_udp udp-3aae8a7e-e8f6-4d04-82d6-74544d59e9ff 10015 127.0.0.1 10014 
+Nov 24 23:30:38.696 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-3aae8a7e-e8f6-4d04-82d6-74544d59e9ff 
+Nov 24 23:30:38.698 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 24 23:30:48.538 HYPERVISOR: exec_cmd: nio create_udp udp-8cd5ae70-eed8-4a1c-bad4-005d4ad702d2 10017 127.0.0.1 10016 
+Nov 24 23:30:48.540 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-8cd5ae70-eed8-4a1c-bad4-005d4ad702d2 
+Nov 24 23:30:48.541 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 24 23:50:33.367 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/Projeto/project-files/dynamips 
+Nov 24 23:50:33.367 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/Projeto/project-files/dynamips
+Nov 24 23:50:33.437 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 24 23:50:52.396 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 24 23:50:52.406 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 24 23:50:52.411 HYPERVISOR: exec_cmd: vm delete R5 
+Nov 24 23:50:52.411 VM: VM R5 destroyed.
+Nov 24 23:50:52.417 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 24 23:50:52.867 HYPERVISOR: Stopped.
+Nov 24 23:50:52.867 GENERAL: reset done.

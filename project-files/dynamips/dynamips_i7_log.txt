@@ -1,0 +1,24 @@
+Nov 24 22:57:57.477 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Nov 24 22:57:57.477 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46507.
+Nov 24 22:57:57.493 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 24 22:57:57.494 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips 
+Nov 24 22:57:57.494 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips
+Nov 24 22:57:57.495 HYPERVISOR: exec_cmd: vm create R3 7 c3725 
+Nov 24 22:57:57.495 VM: VM R3 created.
+Nov 24 22:57:57.496 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5003 
+Nov 24 22:57:57.496 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Nov 24 22:57:57.497 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Nov 24 22:57:57.498 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 24 22:57:57.499 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Nov 24 22:57:57.499 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Nov 24 22:57:57.500 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 24 22:57:57.501 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a68e70 
+Nov 24 22:57:57.502 HYPERVISOR: exec_cmd: vm set_ios R3 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 24 22:57:57.503 HYPERVISOR: exec_cmd: vm set_config R3 configs/i7_startup-config.cfg 
+Nov 24 22:59:01.599 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 24 22:59:01.603 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 24 22:59:01.606 HYPERVISOR: exec_cmd: vm delete R3 
+Nov 24 22:59:01.606 VM: VM R3 destroyed.
+Nov 24 22:59:01.610 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 24 22:59:02.064 HYPERVISOR: Stopped.
+Nov 24 22:59:02.064 GENERAL: reset done.

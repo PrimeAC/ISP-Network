@@ -1,0 +1,30 @@
+Nov 24 22:49:02.093 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Nov 24 22:49:02.093 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40270.
+Nov 24 22:49:02.111 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 24 22:49:02.112 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips 
+Nov 24 22:49:02.112 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/1e4f192f-d4ee-47b4-aa0f-e0829fe4aa9e/project-files/dynamips
+Nov 24 22:49:02.112 HYPERVISOR: exec_cmd: vm create AUTOIDLEPC 3 c3725 
+Nov 24 22:49:02.113 VM: VM AUTOIDLEPC created.
+Nov 24 22:49:02.113 HYPERVISOR: exec_cmd: vm set_con_tcp_port AUTOIDLEPC 5000 
+Nov 24 22:49:02.114 HYPERVISOR: exec_cmd: c3725 get_mac_addr AUTOIDLEPC 
+Nov 24 22:49:02.115 HYPERVISOR: exec_cmd: vm set_ios AUTOIDLEPC /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 24 22:49:02.133 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:02.134 HYPERVISOR: exec_cmd: vm set_idle_pc AUTOIDLEPC 0x0 
+Nov 24 22:49:02.135 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:02.135 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:02.136 HYPERVISOR: exec_cmd: vm start AUTOIDLEPC 
+Nov 24 22:49:22.464 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:22.464 HYPERVISOR: exec_cmd: vm get_idle_pc_prop AUTOIDLEPC 0 
+Nov 24 22:49:32.568 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:32.568 HYPERVISOR: exec_cmd: vm set_idle_pc_online AUTOIDLEPC 0 0x60a68e70 
+Nov 24 22:49:32.569 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Nov 24 22:49:35.610 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Nov 24 22:49:35.611 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:35.612 HYPERVISOR: exec_cmd: vm stop AUTOIDLEPC 
+Nov 24 22:49:35.709 VM: VM AUTOIDLEPC shutdown.
+Nov 24 22:49:35.714 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Nov 24 22:49:35.716 HYPERVISOR: exec_cmd: vm delete AUTOIDLEPC 
+Nov 24 22:49:35.717 VM: VM AUTOIDLEPC destroyed.
+Nov 24 22:49:35.718 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 24 22:49:36.141 HYPERVISOR: Stopped.
+Nov 24 22:49:36.141 GENERAL: reset done.
