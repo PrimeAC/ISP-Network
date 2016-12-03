@@ -1,40 +1,47 @@
-Nov 26 17:40:50.638 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Nov 26 17:40:50.638 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58220.
-Nov 26 17:40:50.655 HYPERVISOR: exec_cmd: hypervisor version 
-Nov 26 17:40:50.658 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Nov 26 17:40:50.658 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Nov 26 17:40:50.660 HYPERVISOR: exec_cmd: vm create R4 11 c3725 
-Nov 26 17:40:50.660 VM: VM R4 created.
-Nov 26 17:40:50.662 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5002 
-Nov 26 17:40:50.665 HYPERVISOR: exec_cmd: c3725 get_mac_addr R4 
-Nov 26 17:40:50.667 HYPERVISOR: exec_cmd: c3725 set_mac_addr R4 c20b.253d.0000 
-Nov 26 17:40:50.671 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 17:40:50.675 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60a68e70 
-Nov 26 17:40:50.678 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 17:40:50.681 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-4T 
-Nov 26 17:40:50.701 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
-Nov 26 17:40:50.718 HYPERVISOR: exec_cmd: vm set_ios R4 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Nov 26 17:40:50.721 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
-Nov 26 17:40:50.731 HYPERVISOR: exec_cmd: vm set_config R4 configs/i11_startup-config.cfg 
-Nov 26 17:40:51.511 HYPERVISOR: exec_cmd: nio create_udp udp-0eb01af1-dd0e-4757-80d4-1558c0cdb37e 10009 127.0.0.1 10008 
-Nov 26 17:40:51.513 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-0eb01af1-dd0e-4757-80d4-1558c0cdb37e 
-Nov 26 17:40:51.514 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 17:40:51.550 HYPERVISOR: exec_cmd: nio create_udp udp-b4adbcfd-6641-4eb5-a4c6-0b66c288bbc4 10010 127.0.0.1 10012 
-Nov 26 17:40:51.558 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-b4adbcfd-6641-4eb5-a4c6-0b66c288bbc4 
-Nov 26 17:40:51.560 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 17:41:26.977 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
-Nov 26 17:41:26.979 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Nov 26 17:41:26.980 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 17:41:26.981 HYPERVISOR: exec_cmd: vm start R4 
-Nov 26 18:47:49.395 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 18:47:49.396 HYPERVISOR: exec_cmd: vm stop R4 
-Nov 26 18:47:49.494 VM: VM R4 shutdown.
-Nov 26 18:47:49.498 HYPERVISOR: exec_cmd: vm extract_config R4 
-Nov 26 18:48:19.982 HYPERVISOR: exec_cmd: vm extract_config R4 
-Nov 26 18:48:21.671 HYPERVISOR: exec_cmd: vm get_status R4 
-Nov 26 18:48:21.682 HYPERVISOR: exec_cmd: vm extract_config R4 
-Nov 26 18:48:21.697 HYPERVISOR: exec_cmd: vm delete R4 
-Nov 26 18:48:21.697 VM: VM R4 destroyed.
-Nov 26 18:48:21.703 HYPERVISOR: exec_cmd: hypervisor stop 
-Nov 26 18:48:21.833 HYPERVISOR: Stopped.
-Nov 26 18:48:21.833 GENERAL: reset done.
+Dec 03 18:11:10.018 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 03 18:11:10.019 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56827.
+Dec 03 18:11:10.043 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 18:11:10.045 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 03 18:11:10.045 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 03 18:11:10.046 HYPERVISOR: exec_cmd: vm create R4 11 c3725 
+Dec 03 18:11:10.046 VM: VM R4 created.
+Dec 03 18:11:10.049 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5002 
+Dec 03 18:11:10.065 HYPERVISOR: exec_cmd: c3725 get_mac_addr R4 
+Dec 03 18:11:10.074 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Dec 03 18:11:10.082 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Dec 03 18:11:10.090 HYPERVISOR: exec_cmd: c3725 set_mac_addr R4 c20b.253d.0000 
+Dec 03 18:11:10.092 HYPERVISOR: exec_cmd: vm set_ios R4 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 03 18:11:10.093 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 18:11:10.094 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60a68e70 
+Dec 03 18:11:10.103 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 18:11:10.117 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-4T 
+Dec 03 18:11:10.124 HYPERVISOR: exec_cmd: vm set_config R4 configs/i11_startup-config.cfg 
+Dec 03 18:11:10.776 HYPERVISOR: exec_cmd: nio create_udp udp-9ad73414-6bc4-4c6a-9e98-12ace2a85d7d 10009 127.0.0.1 10008 
+Dec 03 18:11:10.778 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-9ad73414-6bc4-4c6a-9e98-12ace2a85d7d 
+Dec 03 18:11:10.781 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 18:11:10.823 HYPERVISOR: exec_cmd: nio create_udp udp-5e931ad0-e1f7-476f-b68b-f14dc8a59a8f 10010 127.0.0.1 10011 
+Dec 03 18:11:10.838 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-5e931ad0-e1f7-476f-b68b-f14dc8a59a8f 
+Dec 03 18:11:10.839 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 18:34:19.338 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Dec 03 18:34:19.343 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 03 18:34:19.348 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 18:34:19.357 HYPERVISOR: exec_cmd: vm start R4 
+Dec 03 19:47:21.365 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 19:47:21.367 HYPERVISOR: exec_cmd: vm stop R4 
+Dec 03 19:47:21.465 VM: VM R4 shutdown.
+Dec 03 19:47:21.466 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 03 19:50:08.294 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 19:50:08.297 HYPERVISOR: exec_cmd: vm start R4 
+Dec 03 20:18:30.940 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 20:18:30.942 HYPERVISOR: exec_cmd: vm stop R4 
+Dec 03 20:18:31.043 VM: VM R4 shutdown.
+Dec 03 20:18:31.045 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 03 20:18:33.109 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 03 20:18:34.906 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 03 20:18:36.526 HYPERVISOR: exec_cmd: vm get_status R4 
+Dec 03 20:18:36.535 HYPERVISOR: exec_cmd: vm extract_config R4 
+Dec 03 20:18:36.542 HYPERVISOR: exec_cmd: vm delete R4 
+Dec 03 20:18:36.542 VM: VM R4 destroyed.
+Dec 03 20:18:36.549 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 20:18:36.741 HYPERVISOR: Stopped.
+Dec 03 20:18:36.741 GENERAL: reset done.
