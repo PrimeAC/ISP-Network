@@ -1,24 +1,30 @@
-Dec 04 19:43:57.567 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 04 19:43:57.567 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57684.
-Dec 04 19:43:57.580 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 04 19:43:57.580 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/GNS3/projects/miniProj/project-files/dynamips 
-Dec 04 19:43:57.580 GENERAL: working_dir=/home/bruno/GNS3/projects/miniProj/project-files/dynamips
-Dec 04 19:43:57.581 HYPERVISOR: exec_cmd: vm create SwR1 9 c3725 
-Dec 04 19:43:57.581 VM: VM SwR1 created.
-Dec 04 19:43:57.581 HYPERVISOR: exec_cmd: vm set_con_tcp_port SwR1 5007 
-Dec 04 19:43:57.581 HYPERVISOR: exec_cmd: c3725 get_mac_addr SwR1 
-Dec 04 19:43:57.581 HYPERVISOR: exec_cmd: vm set_nvram SwR1 256 
-Dec 04 19:43:57.582 HYPERVISOR: exec_cmd: vm get_status SwR1 
-Dec 04 19:43:57.582 HYPERVISOR: exec_cmd: vm slot_add_binding SwR1 1 0 NM-16ESW 
-Dec 04 19:43:57.582 HYPERVISOR: exec_cmd: vm get_status SwR1 
-Dec 04 19:43:57.583 HYPERVISOR: exec_cmd: vm set_idle_pc SwR1 0x60a68ca0 
-Dec 04 19:43:57.583 HYPERVISOR: exec_cmd: vm set_ios SwR1 /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 04 19:43:57.583 HYPERVISOR: exec_cmd: vm set_disk0 SwR1 1 
-Dec 04 19:43:57.584 HYPERVISOR: exec_cmd: vm set_config SwR1 configs/i9_startup-config.cfg 
-Dec 04 19:44:02.282 HYPERVISOR: exec_cmd: vm get_status SwR1 
-Dec 04 19:44:02.282 HYPERVISOR: exec_cmd: vm extract_config SwR1 
-Dec 04 19:44:02.282 HYPERVISOR: exec_cmd: vm delete SwR1 
-Dec 04 19:44:02.282 VM: VM SwR1 destroyed.
-Dec 04 19:44:02.283 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 04 19:44:02.585 HYPERVISOR: Stopped.
-Dec 04 19:44:02.585 GENERAL: reset done.
+Dec 05 16:12:02.982 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 16:12:02.982 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46398.
+Dec 05 16:12:02.996 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 16:12:02.996 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/Documents/AR/Projeto/ISP-Network/project-files/dynamips 
+Dec 05 16:12:02.996 GENERAL: working_dir=/home/bruno/Documents/AR/Projeto/ISP-Network/project-files/dynamips
+Dec 05 16:12:02.996 HYPERVISOR: exec_cmd: vm create AUTOIDLEPC 7 c3725 
+Dec 05 16:12:02.996 VM: VM AUTOIDLEPC created.
+Dec 05 16:12:02.997 HYPERVISOR: exec_cmd: vm set_con_tcp_port AUTOIDLEPC 5014 
+Dec 05 16:12:02.997 HYPERVISOR: exec_cmd: c3725 get_mac_addr AUTOIDLEPC 
+Dec 05 16:12:02.997 HYPERVISOR: exec_cmd: vm set_ios AUTOIDLEPC /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 16:12:03.043 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:03.043 HYPERVISOR: exec_cmd: vm set_idle_pc AUTOIDLEPC 0x0 
+Dec 05 16:12:03.044 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:03.044 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:03.045 HYPERVISOR: exec_cmd: vm start AUTOIDLEPC 
+Dec 05 16:12:23.294 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:23.294 HYPERVISOR: exec_cmd: vm get_idle_pc_prop AUTOIDLEPC 0 
+Dec 05 16:12:33.407 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:33.407 HYPERVISOR: exec_cmd: vm set_idle_pc_online AUTOIDLEPC 0 0x60a68e70 
+Dec 05 16:12:33.407 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Dec 05 16:12:36.448 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Dec 05 16:12:36.449 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:36.449 HYPERVISOR: exec_cmd: vm stop AUTOIDLEPC 
+Dec 05 16:12:36.522 VM: VM AUTOIDLEPC shutdown.
+Dec 05 16:12:36.531 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Dec 05 16:12:36.531 HYPERVISOR: exec_cmd: vm delete AUTOIDLEPC 
+Dec 05 16:12:36.531 VM: VM AUTOIDLEPC destroyed.
+Dec 05 16:12:36.531 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 16:12:37.027 HYPERVISOR: Stopped.
+Dec 05 16:12:37.027 GENERAL: reset done.

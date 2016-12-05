@@ -1,19 +1,34 @@
-Dec 04 19:27:43.311 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 04 19:27:43.311 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58961.
-Dec 04 19:27:43.354 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 04 19:27:43.355 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/GNS3/projects/miniProj/project-files/dynamips 
-Dec 04 19:27:43.355 GENERAL: working_dir=/home/bruno/GNS3/projects/miniProj/project-files/dynamips
-Dec 04 19:27:43.356 HYPERVISOR: exec_cmd: ethsw create SW8 
-Dec 04 19:27:43.956 HYPERVISOR: exec_cmd: nio create_udp udp-aba08479-e42a-4a5d-8c59-1c236fe4c189 10012 127.0.0.1 10013 
-Dec 04 19:27:43.957 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-aba08479-e42a-4a5d-8c59-1c236fe4c189 
-Dec 04 19:27:43.977 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-aba08479-e42a-4a5d-8c59-1c236fe4c189 1 
-Dec 04 19:27:43.996 HYPERVISOR: exec_cmd: nio create_udp udp-572d5e2c-d9e2-4bc7-ba6c-aa515acb92a3 10014 127.0.0.1 10015 
-Dec 04 19:27:43.997 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-572d5e2c-d9e2-4bc7-ba6c-aa515acb92a3 
-Dec 04 19:27:44.014 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-572d5e2c-d9e2-4bc7-ba6c-aa515acb92a3 1 
-Dec 04 19:27:44.019 HYPERVISOR: exec_cmd: nio create_udp udp-a3207175-27c2-4732-9f57-18560fb4ba8a 10016 127.0.0.1 10017 
-Dec 04 19:27:44.020 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-a3207175-27c2-4732-9f57-18560fb4ba8a 
-Dec 04 19:27:44.061 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-a3207175-27c2-4732-9f57-18560fb4ba8a 1 
-Dec 04 21:09:19.296 HYPERVISOR: exec_cmd: ethsw delete SW8 
-Dec 04 21:09:19.352 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 04 21:09:19.438 HYPERVISOR: Stopped.
-Dec 04 21:09:19.438 GENERAL: reset done.
+Dec 05 19:05:07.581 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 19:05:07.581 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49894.
+Dec 05 19:05:07.613 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 19:05:07.614 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/GNS3/projects/miniProj/project-files/dynamips 
+Dec 05 19:05:07.615 GENERAL: working_dir=/home/bruno/GNS3/projects/miniProj/project-files/dynamips
+Dec 05 19:05:07.620 HYPERVISOR: exec_cmd: vm create PC3 2 c3725 
+Dec 05 19:05:07.620 VM: VM PC3 created.
+Dec 05 19:05:07.630 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC3 5007 
+Dec 05 19:05:07.631 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC3 
+Dec 05 19:05:07.633 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 05 19:05:07.634 HYPERVISOR: exec_cmd: vm set_idle_pc PC3 0x60a68ca0 
+Dec 05 19:05:07.635 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC3 c202.0f27.0000 
+Dec 05 19:05:07.641 HYPERVISOR: exec_cmd: vm set_ios PC3 /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 19:05:07.650 HYPERVISOR: exec_cmd: vm set_disk0 PC3 0 
+Dec 05 19:05:07.651 HYPERVISOR: exec_cmd: vm set_nvram PC3 256 
+Dec 05 19:05:07.653 HYPERVISOR: exec_cmd: vm set_config PC3 configs/i2_startup-config.cfg 
+Dec 05 19:05:08.231 HYPERVISOR: exec_cmd: nio create_udp udp-650f419a-6d56-4618-b37c-3bf1716a4c0e 10014 127.0.0.1 10015 
+Dec 05 19:05:08.232 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 0 0 udp-650f419a-6d56-4618-b37c-3bf1716a4c0e 
+Dec 05 19:05:08.232 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 05 19:05:15.248 HYPERVISOR: exec_cmd: vm set_ghost_status PC3 2 
+Dec 05 19:05:15.250 HYPERVISOR: exec_cmd: vm set_ghost_file PC3 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 05 19:05:15.252 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 05 19:05:15.254 HYPERVISOR: exec_cmd: vm start PC3 
+Dec 05 19:07:33.809 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 05 19:07:33.811 HYPERVISOR: exec_cmd: vm stop PC3 
+Dec 05 19:07:33.880 VM: VM PC3 shutdown.
+Dec 05 19:07:33.881 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Dec 05 19:07:35.923 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 05 19:07:35.928 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Dec 05 19:07:35.932 HYPERVISOR: exec_cmd: vm delete PC3 
+Dec 05 19:07:35.932 VM: VM PC3 destroyed.
+Dec 05 19:07:35.938 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 19:07:36.238 HYPERVISOR: Stopped.
+Dec 05 19:07:36.238 GENERAL: reset done.
