@@ -1,58 +1,22 @@
-Dec 03 18:27:07.252 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 03 18:27:07.253 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48055.
-Dec 03 18:27:07.269 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 03 18:27:07.270 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 03 18:27:07.270 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 03 18:27:07.271 HYPERVISOR: exec_cmd: vm create Sw1 4 c3725 
-Dec 03 18:27:07.271 VM: VM Sw1 created.
-Dec 03 18:27:07.272 HYPERVISOR: exec_cmd: vm set_con_tcp_port Sw1 5014 
-Dec 03 18:27:07.272 HYPERVISOR: exec_cmd: c3725 get_mac_addr Sw1 
-Dec 03 18:27:07.273 HYPERVISOR: exec_cmd: vm set_nvram Sw1 256 
-Dec 03 18:27:07.274 HYPERVISOR: exec_cmd: vm set_disk0 Sw1 0 
-Dec 03 18:27:07.275 HYPERVISOR: exec_cmd: vm get_status Sw1 
-Dec 03 18:27:07.275 HYPERVISOR: exec_cmd: vm set_idle_pc Sw1 0x60a68e70 
-Dec 03 18:27:07.276 HYPERVISOR: exec_cmd: vm set_ios Sw1 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 03 18:27:07.277 HYPERVISOR: exec_cmd: vm get_status Sw1 
-Dec 03 18:27:07.278 HYPERVISOR: exec_cmd: vm slot_add_binding Sw1 1 0 NM-16ESW 
-Dec 03 18:27:07.280 HYPERVISOR: exec_cmd: vm set_config Sw1 configs/i4_startup-config.cfg 
-Dec 03 18:27:33.980 HYPERVISOR: exec_cmd: vm rename Sw1 Sw11 
-Dec 03 18:31:45.773 HYPERVISOR: exec_cmd: nio create_udp udp-2c057b29-8be4-4046-a94d-56378ee935f2 10020 127.0.0.1 10021 
-Dec 03 18:31:45.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 1 udp-2c057b29-8be4-4046-a94d-56378ee935f2 
-Dec 03 18:31:45.778 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:31:53.161 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:31:53.164 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Sw11 1 1 
-Dec 03 18:31:53.167 HYPERVISOR: exec_cmd: nio delete udp-2c057b29-8be4-4046-a94d-56378ee935f2 
-Dec 03 18:32:36.737 HYPERVISOR: exec_cmd: nio create_udp udp-c885a810-6222-4d21-90e6-05c935fc03f8 10020 127.0.0.1 10021 
-Dec 03 18:32:36.748 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 1 udp-c885a810-6222-4d21-90e6-05c935fc03f8 
-Dec 03 18:32:36.750 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:33:10.932 HYPERVISOR: exec_cmd: nio create_udp udp-3c9273b3-36fe-44bc-a6ef-9c93d9749971 10025 127.0.0.1 10024 
-Dec 03 18:33:10.945 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 0 udp-3c9273b3-36fe-44bc-a6ef-9c93d9749971 
-Dec 03 18:33:10.947 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:33:36.901 HYPERVISOR: exec_cmd: nio create_udp udp-d3fb52ef-0bef-435b-85e1-fb411279ccc0 10028 127.0.0.1 10029 
-Dec 03 18:33:36.902 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 2 udp-d3fb52ef-0bef-435b-85e1-fb411279ccc0 
-Dec 03 18:33:36.903 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:34:19.084 HYPERVISOR: exec_cmd: vm set_ghost_status Sw11 2 
-Dec 03 18:34:19.091 HYPERVISOR: exec_cmd: vm set_ghost_file Sw11 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 03 18:34:19.093 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 18:34:19.096 HYPERVISOR: exec_cmd: vm start Sw11 
-Dec 03 19:47:03.224 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 19:47:03.226 HYPERVISOR: exec_cmd: vm slot_disable_nio Sw11 1 1 
-Dec 03 19:47:03.240 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Sw11 1 1 
-Dec 03 19:47:03.241 HYPERVISOR: exec_cmd: nio delete udp-c885a810-6222-4d21-90e6-05c935fc03f8 
-Dec 03 19:47:03.284 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 19:47:03.284 HYPERVISOR: exec_cmd: vm slot_disable_nio Sw11 1 0 
-Dec 03 19:47:03.298 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Sw11 1 0 
-Dec 03 19:47:03.298 HYPERVISOR: exec_cmd: nio delete udp-3c9273b3-36fe-44bc-a6ef-9c93d9749971 
-Dec 03 19:47:05.108 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 19:47:05.110 HYPERVISOR: exec_cmd: vm slot_disable_nio Sw11 1 2 
-Dec 03 19:47:05.119 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Sw11 1 2 
-Dec 03 19:47:05.120 HYPERVISOR: exec_cmd: nio delete udp-d3fb52ef-0bef-435b-85e1-fb411279ccc0 
-Dec 03 19:47:05.124 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 03 19:47:05.124 HYPERVISOR: exec_cmd: vm stop Sw11 
-Dec 03 19:47:05.195 VM: VM Sw11 shutdown.
-Dec 03 19:47:05.196 HYPERVISOR: exec_cmd: vm extract_config Sw11 
-Dec 03 19:47:05.197 HYPERVISOR: exec_cmd: vm delete Sw11 
-Dec 03 19:47:05.197 VM: VM Sw11 destroyed.
-Dec 03 19:47:05.199 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 03 19:47:05.629 HYPERVISOR: Stopped.
-Dec 03 19:47:05.629 GENERAL: reset done.
+Dec 05 16:30:36.257 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 16:30:36.257 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59331.
+Dec 05 16:30:36.300 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 16:30:36.304 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 05 16:30:36.304 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 05 16:30:36.306 HYPERVISOR: exec_cmd: vm create R9 5 c3725 
+Dec 05 16:30:36.306 VM: VM R9 created.
+Dec 05 16:30:36.309 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5008 
+Dec 05 16:30:36.311 HYPERVISOR: exec_cmd: c3725 get_mac_addr R9 
+Dec 05 16:30:36.313 HYPERVISOR: exec_cmd: vm set_ios R9 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 16:30:36.315 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:30:36.318 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x60a68e70 
+Dec 05 16:30:36.320 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Dec 05 16:30:36.322 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+Dec 05 16:30:36.333 HYPERVISOR: exec_cmd: vm set_config R9 configs/i5_startup-config.cfg 
+Dec 05 16:30:47.673 HYPERVISOR: exec_cmd: vm get_status R9 
+Dec 05 16:30:47.684 HYPERVISOR: exec_cmd: vm extract_config R9 
+Dec 05 16:30:47.688 HYPERVISOR: exec_cmd: vm delete R9 
+Dec 05 16:30:47.688 VM: VM R9 destroyed.
+Dec 05 16:30:47.693 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 16:30:47.806 HYPERVISOR: Stopped.
+Dec 05 16:30:47.806 GENERAL: reset done.

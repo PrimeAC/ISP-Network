@@ -1,30 +1,22 @@
-Dec 03 18:19:19.857 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 03 18:19:19.858 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37002.
-Dec 03 18:19:19.877 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 03 18:19:19.878 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 03 18:19:19.878 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 03 18:19:19.879 HYPERVISOR: exec_cmd: vm create AUTOIDLEPC 2 c3725 
-Dec 03 18:19:19.879 VM: VM AUTOIDLEPC created.
-Dec 03 18:19:19.879 HYPERVISOR: exec_cmd: vm set_con_tcp_port AUTOIDLEPC 5016 
-Dec 03 18:19:19.880 HYPERVISOR: exec_cmd: c3725 get_mac_addr AUTOIDLEPC 
-Dec 03 18:19:19.881 HYPERVISOR: exec_cmd: vm set_ios AUTOIDLEPC /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 03 18:19:19.899 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:19.900 HYPERVISOR: exec_cmd: vm set_idle_pc AUTOIDLEPC 0x0 
-Dec 03 18:19:19.900 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:19.901 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:19.902 HYPERVISOR: exec_cmd: vm start AUTOIDLEPC 
-Dec 03 18:19:40.222 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:40.222 HYPERVISOR: exec_cmd: vm get_idle_pc_prop AUTOIDLEPC 0 
-Dec 03 18:19:50.324 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:50.324 HYPERVISOR: exec_cmd: vm set_idle_pc_online AUTOIDLEPC 0 0x60a68e70 
-Dec 03 18:19:50.324 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
-Dec 03 18:19:53.367 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
-Dec 03 18:19:53.368 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:53.369 HYPERVISOR: exec_cmd: vm stop AUTOIDLEPC 
-Dec 03 18:19:54.777 VM: VM AUTOIDLEPC shutdown.
-Dec 03 18:19:54.792 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
-Dec 03 18:19:54.793 HYPERVISOR: exec_cmd: vm delete AUTOIDLEPC 
-Dec 03 18:19:54.793 VM: VM AUTOIDLEPC destroyed.
-Dec 03 18:19:54.794 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 03 18:19:54.907 HYPERVISOR: Stopped.
-Dec 03 18:19:54.907 GENERAL: reset done.
+Dec 05 16:30:36.220 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 05 16:30:36.220 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39726.
+Dec 05 16:30:36.297 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 05 16:30:36.299 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 05 16:30:36.299 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 05 16:30:36.302 HYPERVISOR: exec_cmd: vm create R7 2 c3725 
+Dec 05 16:30:36.302 VM: VM R7 created.
+Dec 05 16:30:36.306 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5006 
+Dec 05 16:30:36.308 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Dec 05 16:30:36.311 HYPERVISOR: exec_cmd: vm set_ios R7 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 05 16:30:36.313 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 05 16:30:36.315 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60a68e70 
+Dec 05 16:30:36.317 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Dec 05 16:30:36.319 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Dec 05 16:30:36.322 HYPERVISOR: exec_cmd: vm set_config R7 configs/i2_startup-config.cfg 
+Dec 05 16:30:47.682 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 05 16:30:47.687 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 05 16:30:47.691 HYPERVISOR: exec_cmd: vm delete R7 
+Dec 05 16:30:47.691 VM: VM R7 destroyed.
+Dec 05 16:30:47.696 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 05 16:30:47.803 HYPERVISOR: Stopped.
+Dec 05 16:30:47.803 GENERAL: reset done.
