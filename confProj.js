@@ -6,6 +6,11 @@ ip add 201.3.4.1 255.255.255.192
 no shut
 end
 wr
+conf t
+int f0/0
+ipv6 add autoconfig
+end
+wr
 
 
 //R3
@@ -26,6 +31,26 @@ network 201.3.4.64 0.0.0.63 area 4
 network 201.3.4.128 0.0.0.63 area 4
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 3.3.3.3
+exit
+int f0/0
+ipv6 add 2001:db8:3:2::3/64
+ipv6 ospf 1 area 4
+no shut
+int f0/1
+ipv6 add 2001:db8:3:3::3/64
+no shut
+ipv6 ospf 1 area 4 
+int f1/0
+ipv6 add 2001:db8:3:1::3/64
+ipv6 ospf 1 area 4
+no shut
+end
+wr
+
 
 //R2
 conf t
@@ -36,16 +61,36 @@ int f0/1
 ip add 201.3.4.130 255.255.255.192
 no shut
 int s1/0
-ip add 201.3.0.194 255.255.255.192
+ip add 201.3.0.194 255.255.255.240
 encapsulation ppp
 no shut
 router ospf 1
 router-id 2.2.2.2
 network 201.3.4.192 0.0.0.63 area 4
 network 201.3.4.128 0.0.0.63 area 4
-network 201.3.0.192 0.0.0.63 area 0
+network 201.3.0.192 0.0.0.15 area 0
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 2.2.2.2
+exit
+int f0/0
+ipv6 add 2001:db8:3:4::2/64
+ipv6 ospf 1 area 4
+no shut
+int f0/1
+ipv6 add 2001:db8:3:3::2/64
+no shut
+ipv6 ospf 1 area 4 
+int s1/0
+ipv6 add 2001:db8:3:9::2/64
+ipv6 ospf 1 area 0
+no shut
+end
+wr
+
 
 //R1
 conf t
@@ -56,14 +101,33 @@ int f0/1
 ip add 201.3.4.193 255.255.255.192
 no shut
 int s1/0
-ip add 201.3.0.1 255.255.255.192
+ip add 201.3.0.1 255.255.255.240
 encapsulation ppp
 no shut
 router ospf 1
 router-id 1.1.1.1
 network 201.3.4.192 0.0.0.63 area 4
 network 201.3.4.128 0.0.0.63 area 4
-network 201.3.0.0 0.0.0.63 area 0
+network 201.3.0.0 0.0.0.15 area 0
+end
+wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 1.1.1.1
+exit
+int f0/0
+ipv6 add 2001:db8:3:2::1/64
+ipv6 ospf 1 area 4
+no shut
+int f0/1
+ipv6 add 2001:db8:3:4::1/64
+no shut
+ipv6 ospf 1 area 4 
+int s1/0
+ipv6 add 2001:db8:3:5::1/64
+ipv6 ospf 1 area 0
+no shut
 end
 wr
 
@@ -77,19 +141,35 @@ int f0/0
 ip add 201.3.1.4 255.255.255.0
 no shut
 int f0/1
-ip add 201.3.0.68 255.255.255.192
+ip add 201.3.0.68 255.255.255.240
 no shut
 int s1/0
-ip add 201.3.0.4 255.255.255.192
+ip add 201.3.0.4 255.255.255.240
 encapsulation ppp
 no shut
 router ospf 1
 router-id 4.4.4.4
-network 201.3.0.64 0.0.0.63 area 0
-network 201.3.0.0 0.0.0.63 area 0
-network 201.3.1.0 0.0.0.63 area 1
+network 201.3.0.64 0.0.0.15 area 0
+network 201.3.0.0 0.0.0.15 area 0
+network 201.3.1.0 0.0.0.255 area 1
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 4.4.4.4
+exit
+int f0/1
+ipv6 add 2001:db8:3:6::4/64
+no shut
+ipv6 ospf 1 area 0 
+int s1/0
+ipv6 add 2001:db8:3:5::4/64
+ipv6 ospf 1 area 0
+no shut
+end
+wr
+
 
 ////////////////////////////  FIM AREA 1  ///////////////////////////////////////////
 
@@ -97,36 +177,72 @@ wr
 //R5
 conf t
 int f0/0
-ip add 201.3.0.69 255.255.255.192
+ip add 201.3.0.69 255.255.255.240
 no shut
 int f0/1
 ip add 201.3.2.5 255.255.255.0
 no shut
 router ospf 1
 router-id 5.5.5.5
-network 201.3.0.64 0.0.0.63 area 0
+network 201.3.0.64 0.0.0.15 area 0
 network 201.3.2.0 0.0.0.255 area 2
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 5.5.5.5
+exit
+int f0/0
+ipv6 add 2001:db8:3:6::5/64
+ipv6 ospf 1 area 0 
+no shut
+int f0/1
+ipv6 add 2001:db8:3:7::5/64
+ipv6 ospf 1 area 2 
+no shut
+end
+wr
+
 
 //R6
 conf t
 int f0/0
-ip add 201.3.0.134 255.255.255.192
+ip add 201.3.0.70 255.255.255.240
 no shut
 int f0/1
-ip add 201.3.0.70 255.255.255.192
+ip add 201.3.0.134 255.255.255.240
 no shut
 int f1/0
 ip add 201.3.2.6 255.255.255.0
 no shut
 router ospf 1
 router-id 6.6.6.6
-network 201.3.0.128 0.0.0.63 area 0
+network 201.3.0.128 0.0.0.15 area 0
 network 201.3.2.0 0.0.0.255 area 2
-network 201.3.0.64 0.0.0.63 area 0
+network 201.3.0.64 0.0.0.15 area 0
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 6.6.6.6
+exit
+int f0/0
+ipv6 add 2001:db8:3:6::6/64
+ipv6 ospf 1 area 0 
+no shut
+int f0/1
+ipv6 add 2001:db8:3:8::6/64
+ipv6 ospf 1 area 0
+no shut
+int f1/0
+ipv6 add 2001:db8:3:7::6/64
+ipv6 ospf 1 area 2 
+no shut
+end
+wr
+
 
 //PC6
 conf t
@@ -136,6 +252,12 @@ ip add 201.3.2.60 255.255.255.0
 no shut
 end
 wr
+conf t
+int f0/0
+ipv6 add autoconfig
+end
+wr
+
 
 //PC7
 conf t
@@ -145,6 +267,12 @@ ip add 201.3.2.70 255.255.255.0
 no shut
 end
 wr
+conf t
+int f0/0
+ipv6 add autoconfig
+end
+wr
+
 
 
 
@@ -155,15 +283,15 @@ wr
 conf t
 ip routing
 int f0/0
-ip add 201.3.0.135 255.255.255.192
+ip add 201.3.0.135 255.255.255.240
 no shut
 int s2/0
-ip add 201.3.0.199 255.255.255.192
+ip add 201.3.0.199 255.255.255.240
 encapsulation ppp
 no shut
 router ospf 1
-network 201.3.0.192 0.0.0.192 area 0
-network 201.3.0.128 0.0.0.192 area 0
+network 201.3.0.192 0.0.0.15 area 0
+network 201.3.0.128 0.0.0.15 area 0
 end
 wr
 vlan database
@@ -233,6 +361,22 @@ access-list 10 permit 10.0.10.128 0.0.0.63
 ip nat inside source list 10 int fastEthernet0/0 overload
 end
 wr
+conf t
+ipv6 unicast-routing
+ipv6 router ospf 1
+router-id 7.7.7.7
+exit
+int f0/0
+ipv6 add 2001:db8:3:8::7/64
+ipv6 ospf 1 area 0 
+no shut
+int s2/0
+ipv6 add 2001:db8:3:9::7/64
+ipv6 ospf 1 area 0
+no shut
+end
+wr
+
 
 
 //PC2
