@@ -1,35 +1,35 @@
-Dec 06 17:56:29.911 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 06 17:56:29.912 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48134.
-Dec 06 17:56:29.927 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 06 17:56:29.928 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 06 17:56:29.928 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 06 17:56:29.929 HYPERVISOR: exec_cmd: vm create PC3 19 c3725 
-Dec 06 17:56:29.929 VM: VM PC3 created.
-Dec 06 17:56:29.931 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC3 5008 
-Dec 06 17:56:29.932 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC3 
-Dec 06 17:56:29.933 HYPERVISOR: exec_cmd: vm set_ios PC3 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 06 17:56:29.935 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC3 c213.351e.0000 
-Dec 06 17:56:29.939 HYPERVISOR: exec_cmd: vm get_status PC3 
-Dec 06 17:56:29.945 HYPERVISOR: exec_cmd: vm set_idle_pc PC3 0x60a68e70 
-Dec 06 17:56:29.948 HYPERVISOR: exec_cmd: vm set_nvram PC3 256 
-Dec 06 17:56:29.951 HYPERVISOR: exec_cmd: vm set_disk0 PC3 0 
-Dec 06 17:56:29.955 HYPERVISOR: exec_cmd: vm set_config PC3 configs/i19_startup-config.cfg 
-Dec 06 17:56:31.266 HYPERVISOR: exec_cmd: nio create_udp udp-c6df0cad-3d6d-40fa-bf28-2add93356765 10029 127.0.0.1 10028 
-Dec 06 17:56:31.267 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 0 0 udp-c6df0cad-3d6d-40fa-bf28-2add93356765 
-Dec 06 17:56:31.275 HYPERVISOR: exec_cmd: vm get_status PC3 
-Dec 06 17:56:40.615 HYPERVISOR: exec_cmd: vm set_ghost_status PC3 2 
-Dec 06 17:56:40.626 HYPERVISOR: exec_cmd: vm set_ghost_file PC3 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 06 17:56:40.634 HYPERVISOR: exec_cmd: vm get_status PC3 
-Dec 06 17:56:40.645 HYPERVISOR: exec_cmd: vm start PC3 
-Dec 06 17:59:20.936 HYPERVISOR: exec_cmd: vm extract_config PC3 
-Dec 06 17:59:26.867 HYPERVISOR: exec_cmd: vm get_status PC3 
-Dec 06 17:59:26.873 HYPERVISOR: exec_cmd: vm stop PC3 
-Dec 06 17:59:26.952 VM: VM PC3 shutdown.
-Dec 06 17:59:26.954 HYPERVISOR: exec_cmd: vm extract_config PC3 
-Dec 06 17:59:50.514 HYPERVISOR: exec_cmd: vm get_status PC3 
-Dec 06 17:59:50.531 HYPERVISOR: exec_cmd: vm extract_config PC3 
-Dec 06 17:59:50.545 HYPERVISOR: exec_cmd: vm delete PC3 
-Dec 06 17:59:50.545 VM: VM PC3 destroyed.
-Dec 06 17:59:50.556 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 06 17:59:50.581 HYPERVISOR: Stopped.
-Dec 06 17:59:50.581 GENERAL: reset done.
+Dec 07 10:14:26.823 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 10:14:26.823 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34568.
+Dec 07 10:14:26.839 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 10:14:26.842 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 07 10:14:26.842 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 07 10:14:26.843 HYPERVISOR: exec_cmd: vm create PC3 19 c3725 
+Dec 07 10:14:26.843 VM: VM PC3 created.
+Dec 07 10:14:26.844 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC3 5008 
+Dec 07 10:14:26.846 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC3 
+Dec 07 10:14:26.848 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC3 c213.351e.0000 
+Dec 07 10:14:26.851 HYPERVISOR: exec_cmd: vm set_ios PC3 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 10:14:26.855 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 07 10:14:26.860 HYPERVISOR: exec_cmd: vm set_idle_pc PC3 0x60a68e70 
+Dec 07 10:14:26.864 HYPERVISOR: exec_cmd: vm set_disk0 PC3 0 
+Dec 07 10:14:26.867 HYPERVISOR: exec_cmd: vm set_nvram PC3 256 
+Dec 07 10:14:26.870 HYPERVISOR: exec_cmd: vm set_config PC3 configs/i19_startup-config.cfg 
+Dec 07 10:14:27.979 HYPERVISOR: exec_cmd: nio create_udp udp-2d3c370d-a781-444f-a2a0-26b44442b899 10013 127.0.0.1 10012 
+Dec 07 10:14:27.981 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 0 0 udp-2d3c370d-a781-444f-a2a0-26b44442b899 
+Dec 07 10:14:27.994 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 07 10:14:44.627 HYPERVISOR: exec_cmd: vm set_ghost_status PC3 2 
+Dec 07 10:14:44.629 HYPERVISOR: exec_cmd: vm set_ghost_file PC3 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 07 10:14:44.630 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 07 10:14:44.631 HYPERVISOR: exec_cmd: vm start PC3 
+Dec 07 10:50:36.489 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 07 10:50:36.490 HYPERVISOR: exec_cmd: vm stop PC3 
+Dec 07 10:50:36.568 VM: VM PC3 shutdown.
+Dec 07 10:50:36.569 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Dec 07 10:51:07.937 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Dec 07 10:51:09.556 HYPERVISOR: exec_cmd: vm get_status PC3 
+Dec 07 10:51:09.581 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Dec 07 10:51:09.599 HYPERVISOR: exec_cmd: vm delete PC3 
+Dec 07 10:51:09.599 VM: VM PC3 destroyed.
+Dec 07 10:51:09.619 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 10:51:09.940 HYPERVISOR: Stopped.
+Dec 07 10:51:09.940 GENERAL: reset done.
