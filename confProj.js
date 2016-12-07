@@ -11,6 +11,11 @@ int f0/0
 ipv6 add autoconfig
 end
 wr
+conf t
+ip domain lookup
+ip name-server 201.3.1.1
+end
+wr
 
 
 //R3
@@ -50,6 +55,7 @@ ipv6 ospf 1 area 4
 no shut
 end
 wr
+
 
 
 //R2
@@ -92,6 +98,7 @@ end
 wr
 
 
+
 //R1
 conf t
 int f0/0
@@ -132,6 +139,7 @@ end
 wr
 
 
+
 //////////////////////////// FIM AREA 4  ///////////////////////////////////////////
 
 
@@ -169,6 +177,7 @@ ipv6 ospf 1 area 0
 no shut
 end
 wr
+
 
 
 ////////////////////////////  FIM AREA 1  ///////////////////////////////////////////
@@ -257,6 +266,12 @@ int f0/0
 ipv6 add autoconfig
 end
 wr
+conf t
+ip domain lookup
+ip name-server 201.3.1.1
+end
+wr
+
 
 
 //PC7
@@ -270,6 +285,11 @@ wr
 conf t
 int f0/0
 ipv6 add autoconfig
+end
+wr
+conf t
+ip domain lookup
+ip name-server 201.3.1.1
 end
 wr
 

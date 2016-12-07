@@ -1,22 +1,54 @@
-Dec 07 10:27:11.545 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 07 10:27:11.545 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44843.
-Dec 07 10:27:11.599 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 07 10:27:11.600 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/Documents/ISP-Network/project-files/dynamips 
-Dec 07 10:27:11.600 GENERAL: working_dir=/home/bruno/Documents/ISP-Network/project-files/dynamips
-Dec 07 10:27:11.601 HYPERVISOR: exec_cmd: ethsw create SW9 
-Dec 07 10:27:12.332 HYPERVISOR: exec_cmd: nio create_udp udp-8e8d0df3-4470-403c-86ef-f82cfa071f78 10036 127.0.0.1 10037 
-Dec 07 10:27:12.333 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-8e8d0df3-4470-403c-86ef-f82cfa071f78 
-Dec 07 10:27:12.348 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-8e8d0df3-4470-403c-86ef-f82cfa071f78 1 
-Dec 07 10:27:12.353 HYPERVISOR: exec_cmd: nio create_udp udp-bac808a4-c9f2-42be-b9cb-59a253f37e2e 10040 127.0.0.1 10038 
-Dec 07 10:27:12.355 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-bac808a4-c9f2-42be-b9cb-59a253f37e2e 
-Dec 07 10:27:12.368 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-bac808a4-c9f2-42be-b9cb-59a253f37e2e 1 
-Dec 07 10:27:12.375 HYPERVISOR: exec_cmd: nio create_udp udp-343bd889-2b4e-4fa4-b775-aa11b3a4a2d3 10039 127.0.0.1 10042 
-Dec 07 10:27:12.380 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-343bd889-2b4e-4fa4-b775-aa11b3a4a2d3 
-Dec 07 10:27:12.388 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-343bd889-2b4e-4fa4-b775-aa11b3a4a2d3 1 
-Dec 07 10:27:12.395 HYPERVISOR: exec_cmd: nio create_udp udp-87c4773a-66d6-4ee0-9d98-7b32ecc8ec6f 10041 127.0.0.1 10043 
-Dec 07 10:27:12.399 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-87c4773a-66d6-4ee0-9d98-7b32ecc8ec6f 
-Dec 07 10:27:12.408 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-87c4773a-66d6-4ee0-9d98-7b32ecc8ec6f 1 
-Dec 07 11:06:25.671 HYPERVISOR: exec_cmd: ethsw delete SW9 
-Dec 07 11:06:25.738 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 07 11:06:25.973 HYPERVISOR: Stopped.
-Dec 07 11:06:25.973 GENERAL: reset done.
+Dec 07 15:21:01.749 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 15:21:01.749 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39405.
+Dec 07 15:21:01.801 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 15:21:01.802 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/Documents/ISP-Network/project-files/dynamips 
+Dec 07 15:21:01.802 GENERAL: working_dir=/home/bruno/Documents/ISP-Network/project-files/dynamips
+Dec 07 15:21:01.805 HYPERVISOR: exec_cmd: vm create Sw12 9 c3725 
+Dec 07 15:21:01.805 VM: VM Sw12 created.
+Dec 07 15:21:01.806 HYPERVISOR: exec_cmd: vm set_con_tcp_port Sw12 5015 
+Dec 07 15:21:01.807 HYPERVISOR: exec_cmd: c3725 get_mac_addr Sw12 
+Dec 07 15:21:01.808 HYPERVISOR: exec_cmd: vm set_nvram Sw12 256 
+Dec 07 15:21:01.810 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:21:01.811 HYPERVISOR: exec_cmd: vm slot_add_binding Sw12 1 0 NM-16ESW 
+Dec 07 15:21:01.816 HYPERVISOR: exec_cmd: vm set_ios Sw12 /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 15:21:01.819 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:21:01.820 HYPERVISOR: exec_cmd: vm set_idle_pc Sw12 0x60a68e70 
+Dec 07 15:21:01.821 HYPERVISOR: exec_cmd: vm set_disk0 Sw12 1 
+Dec 07 15:21:01.822 HYPERVISOR: exec_cmd: c3725 set_mac_addr Sw12 c209.1096.0000 
+Dec 07 15:21:01.823 HYPERVISOR: exec_cmd: vm set_config Sw12 configs/i9_startup-config.cfg 
+Dec 07 15:21:02.523 HYPERVISOR: exec_cmd: nio create_udp udp-14f1b1f6-7a5a-4b41-815f-c0c1d00d4421 10034 127.0.0.1 10032 
+Dec 07 15:21:02.524 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw12 1 0 udp-14f1b1f6-7a5a-4b41-815f-c0c1d00d4421 
+Dec 07 15:21:02.524 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:21:02.531 HYPERVISOR: exec_cmd: nio create_udp udp-91076089-e9be-49f1-8dbf-a89789275ab4 10033 127.0.0.1 10035 
+Dec 07 15:21:02.532 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw12 1 5 udp-91076089-e9be-49f1-8dbf-a89789275ab4 
+Dec 07 15:21:02.532 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:21:02.562 HYPERVISOR: exec_cmd: nio create_udp udp-2848b3f4-94bc-4702-a32d-0f958426724a 10037 127.0.0.1 10036 
+Dec 07 15:21:02.563 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw12 1 10 udp-2848b3f4-94bc-4702-a32d-0f958426724a 
+Dec 07 15:21:02.563 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:21:02.570 HYPERVISOR: exec_cmd: nio create_udp udp-a96e7217-4b9a-42de-83c0-6c856cd5d2e5 10039 127.0.0.1 10038 
+Dec 07 15:21:02.571 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw12 1 1 udp-a96e7217-4b9a-42de-83c0-6c856cd5d2e5 
+Dec 07 15:21:02.571 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:29:08.850 HYPERVISOR: exec_cmd: vm set_ghost_status Sw12 2 
+Dec 07 15:29:08.850 HYPERVISOR: exec_cmd: vm set_ghost_file Sw12 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 07 15:29:08.851 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:29:08.851 HYPERVISOR: exec_cmd: vm start Sw12 
+Dec 07 15:31:46.555 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 15:31:46.556 HYPERVISOR: exec_cmd: vm stop Sw12 
+Dec 07 15:31:46.692 VM: VM Sw12 shutdown.
+Dec 07 15:31:46.693 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 17:33:31.109 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 17:33:31.111 HYPERVISOR: exec_cmd: vm start Sw12 
+Dec 07 18:13:07.600 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 18:13:24.624 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 18:13:24.626 HYPERVISOR: exec_cmd: vm stop Sw12 
+Dec 07 18:13:24.758 VM: VM Sw12 shutdown.
+Dec 07 18:13:24.758 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 18:13:47.779 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 18:14:07.524 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 18:14:08.054 HYPERVISOR: exec_cmd: vm get_status Sw12 
+Dec 07 18:14:08.062 HYPERVISOR: exec_cmd: vm extract_config Sw12 
+Dec 07 18:14:08.067 HYPERVISOR: exec_cmd: vm delete Sw12 
+Dec 07 18:14:08.067 VM: VM Sw12 destroyed.
+Dec 07 18:14:08.073 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 18:14:08.129 HYPERVISOR: Stopped.
+Dec 07 18:14:08.129 GENERAL: reset done.
