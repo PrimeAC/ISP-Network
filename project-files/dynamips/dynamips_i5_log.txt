@@ -1,35 +1,19 @@
-Dec 07 10:14:26.855 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 07 10:14:26.855 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38665.
-Dec 07 10:14:26.869 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 07 10:14:26.872 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 07 10:14:26.872 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 07 10:14:26.905 HYPERVISOR: exec_cmd: vm create PC2 20 c3725 
-Dec 07 10:14:26.906 VM: VM PC2 created.
-Dec 07 10:14:26.941 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC2 5009 
-Dec 07 10:14:26.943 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC2 
-Dec 07 10:14:26.945 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC2 c214.352c.0000 
-Dec 07 10:14:26.947 HYPERVISOR: exec_cmd: vm set_ios PC2 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 07 10:14:26.948 HYPERVISOR: exec_cmd: vm get_status PC2 
-Dec 07 10:14:26.949 HYPERVISOR: exec_cmd: vm set_idle_pc PC2 0x60a68e70 
-Dec 07 10:14:26.949 HYPERVISOR: exec_cmd: vm set_disk0 PC2 0 
-Dec 07 10:14:26.950 HYPERVISOR: exec_cmd: vm set_nvram PC2 256 
-Dec 07 10:14:26.951 HYPERVISOR: exec_cmd: vm set_config PC2 configs/i20_startup-config.cfg 
-Dec 07 10:14:28.160 HYPERVISOR: exec_cmd: nio create_udp udp-e88f0706-4e49-4a28-9f0f-21b16aeadbaf 10027 127.0.0.1 10026 
-Dec 07 10:14:28.162 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC2 0 0 udp-e88f0706-4e49-4a28-9f0f-21b16aeadbaf 
-Dec 07 10:14:28.175 HYPERVISOR: exec_cmd: vm get_status PC2 
-Dec 07 10:14:44.451 HYPERVISOR: exec_cmd: vm set_ghost_status PC2 2 
-Dec 07 10:14:44.463 HYPERVISOR: exec_cmd: vm set_ghost_file PC2 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 07 10:14:44.467 HYPERVISOR: exec_cmd: vm get_status PC2 
-Dec 07 10:14:44.476 HYPERVISOR: exec_cmd: vm start PC2 
-Dec 07 10:50:36.451 HYPERVISOR: exec_cmd: vm get_status PC2 
-Dec 07 10:50:36.454 HYPERVISOR: exec_cmd: vm stop PC2 
-Dec 07 10:50:36.536 VM: VM PC2 shutdown.
-Dec 07 10:50:36.537 HYPERVISOR: exec_cmd: vm extract_config PC2 
-Dec 07 10:51:07.934 HYPERVISOR: exec_cmd: vm extract_config PC2 
-Dec 07 10:51:09.571 HYPERVISOR: exec_cmd: vm get_status PC2 
-Dec 07 10:51:09.588 HYPERVISOR: exec_cmd: vm extract_config PC2 
-Dec 07 10:51:09.611 HYPERVISOR: exec_cmd: vm delete PC2 
-Dec 07 10:51:09.611 VM: VM PC2 destroyed.
-Dec 07 10:51:09.624 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 07 10:51:10.005 HYPERVISOR: Stopped.
-Dec 07 10:51:10.005 GENERAL: reset done.
+Dec 07 11:50:23.986 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 11:50:23.986 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34894.
+Dec 07 11:50:24.042 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 11:50:24.045 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 07 11:50:24.045 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 07 11:50:24.053 HYPERVISOR: exec_cmd: ethsw create SW8 
+Dec 07 11:50:24.989 HYPERVISOR: exec_cmd: nio create_udp udp-1825db41-4185-46bf-b990-ccea98b0b99b 10004 127.0.0.1 10008 
+Dec 07 11:50:24.992 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-1825db41-4185-46bf-b990-ccea98b0b99b 
+Dec 07 11:50:25.029 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-1825db41-4185-46bf-b990-ccea98b0b99b 1 
+Dec 07 11:50:25.066 HYPERVISOR: exec_cmd: nio create_udp udp-852f3f72-b207-467d-b5e5-6871a571c685 10010 127.0.0.1 10011 
+Dec 07 11:50:25.074 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-852f3f72-b207-467d-b5e5-6871a571c685 
+Dec 07 11:50:25.104 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-852f3f72-b207-467d-b5e5-6871a571c685 1 
+Dec 07 11:50:25.145 HYPERVISOR: exec_cmd: nio create_udp udp-85403f17-29ef-4959-a409-ccb32b645550 10016 127.0.0.1 10014 
+Dec 07 11:50:25.153 HYPERVISOR: exec_cmd: ethsw add_nio SW8 udp-85403f17-29ef-4959-a409-ccb32b645550 
+Dec 07 11:50:25.190 HYPERVISOR: exec_cmd: ethsw set_access_port SW8 udp-85403f17-29ef-4959-a409-ccb32b645550 1 
+Dec 07 12:01:30.814 HYPERVISOR: exec_cmd: ethsw delete SW8 
+Dec 07 12:01:30.866 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 12:01:31.098 HYPERVISOR: Stopped.
+Dec 07 12:01:31.098 GENERAL: reset done.

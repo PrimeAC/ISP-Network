@@ -1,35 +1,35 @@
-Dec 07 10:14:26.940 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 07 10:14:26.940 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45098.
-Dec 07 10:14:26.996 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 07 10:14:26.998 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 07 10:14:26.998 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 07 10:14:27.000 HYPERVISOR: exec_cmd: vm create PC4 17 c3725 
-Dec 07 10:14:27.000 VM: VM PC4 created.
-Dec 07 10:14:27.003 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5006 
-Dec 07 10:14:27.005 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC4 
-Dec 07 10:14:27.016 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC4 c211.3502.0000 
-Dec 07 10:14:27.032 HYPERVISOR: exec_cmd: vm set_ios PC4 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 07 10:14:27.034 HYPERVISOR: exec_cmd: vm get_status PC4 
-Dec 07 10:14:27.035 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x60a68e70 
-Dec 07 10:14:27.037 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
-Dec 07 10:14:27.039 HYPERVISOR: exec_cmd: vm set_nvram PC4 256 
-Dec 07 10:14:27.041 HYPERVISOR: exec_cmd: vm set_config PC4 configs/i17_startup-config.cfg 
-Dec 07 10:14:28.017 HYPERVISOR: exec_cmd: nio create_udp udp-2446e4bd-5689-414c-ba83-7aaf769b646c 10015 127.0.0.1 10014 
-Dec 07 10:14:28.032 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-2446e4bd-5689-414c-ba83-7aaf769b646c 
-Dec 07 10:14:28.040 HYPERVISOR: exec_cmd: vm get_status PC4 
-Dec 07 10:14:44.370 HYPERVISOR: exec_cmd: vm set_ghost_status PC4 2 
-Dec 07 10:14:44.373 HYPERVISOR: exec_cmd: vm set_ghost_file PC4 c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Dec 07 10:14:44.388 HYPERVISOR: exec_cmd: vm get_status PC4 
-Dec 07 10:14:44.404 HYPERVISOR: exec_cmd: vm start PC4 
-Dec 07 10:50:36.372 HYPERVISOR: exec_cmd: vm get_status PC4 
-Dec 07 10:50:36.372 HYPERVISOR: exec_cmd: vm stop PC4 
-Dec 07 10:50:36.453 VM: VM PC4 shutdown.
-Dec 07 10:50:36.456 HYPERVISOR: exec_cmd: vm extract_config PC4 
-Dec 07 10:51:07.940 HYPERVISOR: exec_cmd: vm extract_config PC4 
-Dec 07 10:51:09.557 HYPERVISOR: exec_cmd: vm get_status PC4 
-Dec 07 10:51:09.581 HYPERVISOR: exec_cmd: vm extract_config PC4 
-Dec 07 10:51:09.601 HYPERVISOR: exec_cmd: vm delete PC4 
-Dec 07 10:51:09.601 VM: VM PC4 destroyed.
-Dec 07 10:51:09.620 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 07 10:51:10.113 HYPERVISOR: Stopped.
-Dec 07 10:51:10.113 GENERAL: reset done.
+Dec 07 11:50:24.101 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 11:50:24.101 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44844.
+Dec 07 11:50:24.143 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 11:50:24.145 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 07 11:50:24.145 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 07 11:50:24.147 HYPERVISOR: exec_cmd: vm create PC2 20 c3725 
+Dec 07 11:50:24.147 VM: VM PC2 created.
+Dec 07 11:50:24.150 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC2 5009 
+Dec 07 11:50:24.168 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC2 
+Dec 07 11:50:24.199 HYPERVISOR: exec_cmd: vm set_nvram PC2 256 
+Dec 07 11:50:24.201 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC2 c214.352c.0000 
+Dec 07 11:50:24.203 HYPERVISOR: exec_cmd: vm set_disk0 PC2 0 
+Dec 07 11:50:24.205 HYPERVISOR: exec_cmd: vm get_status PC2 
+Dec 07 11:50:24.207 HYPERVISOR: exec_cmd: vm set_idle_pc PC2 0x60a68e70 
+Dec 07 11:50:24.219 HYPERVISOR: exec_cmd: vm set_ios PC2 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 11:50:24.236 HYPERVISOR: exec_cmd: vm set_config PC2 configs/i20_startup-config.cfg 
+Dec 07 11:50:25.172 HYPERVISOR: exec_cmd: nio create_udp udp-8b63d4de-4570-4f78-8325-7b60d70c3883 10019 127.0.0.1 10018 
+Dec 07 11:50:25.190 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC2 0 0 udp-8b63d4de-4570-4f78-8325-7b60d70c3883 
+Dec 07 11:50:25.200 HYPERVISOR: exec_cmd: vm get_status PC2 
+Dec 07 11:50:36.625 HYPERVISOR: exec_cmd: vm set_ghost_status PC2 2 
+Dec 07 11:50:36.626 HYPERVISOR: exec_cmd: vm set_ghost_file PC2 c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Dec 07 11:50:36.631 HYPERVISOR: exec_cmd: vm get_status PC2 
+Dec 07 11:50:36.637 HYPERVISOR: exec_cmd: vm start PC2 
+Dec 07 11:56:45.262 HYPERVISOR: exec_cmd: vm get_status PC2 
+Dec 07 11:56:45.265 HYPERVISOR: exec_cmd: vm stop PC2 
+Dec 07 11:56:45.336 VM: VM PC2 shutdown.
+Dec 07 11:56:45.339 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Dec 07 11:56:47.524 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Dec 07 12:01:31.201 HYPERVISOR: exec_cmd: vm get_status PC2 
+Dec 07 12:01:31.235 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Dec 07 12:01:31.253 HYPERVISOR: exec_cmd: vm delete PC2 
+Dec 07 12:01:31.254 VM: VM PC2 destroyed.
+Dec 07 12:01:31.275 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 12:01:31.739 HYPERVISOR: Stopped.
+Dec 07 12:01:31.739 GENERAL: reset done.
