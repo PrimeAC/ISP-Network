@@ -1,0 +1,26 @@
+Dec 07 18:14:09.027 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 18:14:09.027 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42792.
+Dec 07 18:14:09.064 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 18:14:09.065 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/GNS3/projects/ProjPart1/project-files/dynamips 
+Dec 07 18:14:09.065 GENERAL: working_dir=/home/bruno/GNS3/projects/ProjPart1/project-files/dynamips
+Dec 07 18:14:09.066 HYPERVISOR: exec_cmd: vm create PC4 5 c3725 
+Dec 07 18:14:09.066 VM: VM PC4 created.
+Dec 07 18:14:09.068 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC4 5011 
+Dec 07 18:14:09.073 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC4 
+Dec 07 18:14:09.079 HYPERVISOR: exec_cmd: vm set_nvram PC4 256 
+Dec 07 18:14:09.082 HYPERVISOR: exec_cmd: vm set_ios PC4 /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 18:14:09.083 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 07 18:14:09.084 HYPERVISOR: exec_cmd: vm set_idle_pc PC4 0x60a68ca0 
+Dec 07 18:14:09.085 HYPERVISOR: exec_cmd: vm set_disk0 PC4 0 
+Dec 07 18:14:09.086 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC4 c205.0f51.0000 
+Dec 07 18:14:09.087 HYPERVISOR: exec_cmd: vm set_config PC4 configs/i5_startup-config.cfg 
+Dec 07 18:14:09.694 HYPERVISOR: exec_cmd: nio create_udp udp-7e33590b-03e9-4314-b3ce-28737ca2ab61 10018 127.0.0.1 10019 
+Dec 07 18:14:09.695 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC4 0 0 udp-7e33590b-03e9-4314-b3ce-28737ca2ab61 
+Dec 07 18:14:09.698 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 07 18:14:16.737 HYPERVISOR: exec_cmd: vm get_status PC4 
+Dec 07 18:14:16.741 HYPERVISOR: exec_cmd: vm extract_config PC4 
+Dec 07 18:14:16.748 HYPERVISOR: exec_cmd: vm delete PC4 
+Dec 07 18:14:16.748 VM: VM PC4 destroyed.
+Dec 07 18:14:16.759 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 18:14:17.062 HYPERVISOR: Stopped.
+Dec 07 18:14:17.062 GENERAL: reset done.
