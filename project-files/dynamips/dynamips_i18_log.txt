@@ -1,22 +1,26 @@
-Dec 07 11:50:24.463 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 07 11:50:24.463 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34018.
-Dec 07 11:50:24.522 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 07 11:50:24.524 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
-Dec 07 11:50:24.524 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
-Dec 07 11:50:24.536 HYPERVISOR: exec_cmd: ethsw create SW9 
-Dec 07 11:50:25.260 HYPERVISOR: exec_cmd: nio create_udp udp-86756c85-05c6-4db9-8351-aabe4e2bca69 10027 127.0.0.1 10025 
-Dec 07 11:50:25.278 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-86756c85-05c6-4db9-8351-aabe4e2bca69 
-Dec 07 11:50:25.292 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-86756c85-05c6-4db9-8351-aabe4e2bca69 1 
-Dec 07 11:50:25.301 HYPERVISOR: exec_cmd: nio create_udp udp-48d9bb9d-271e-405f-b1de-f451aa5c488a 10028 127.0.0.1 10029 
-Dec 07 11:50:25.320 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-48d9bb9d-271e-405f-b1de-f451aa5c488a 
-Dec 07 11:50:25.328 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-48d9bb9d-271e-405f-b1de-f451aa5c488a 1 
-Dec 07 11:50:25.342 HYPERVISOR: exec_cmd: nio create_udp udp-06e77dfc-8c99-4720-9644-3b15f9293c52 10030 127.0.0.1 10031 
-Dec 07 11:50:25.360 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-06e77dfc-8c99-4720-9644-3b15f9293c52 
-Dec 07 11:50:25.369 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-06e77dfc-8c99-4720-9644-3b15f9293c52 1 
-Dec 07 11:50:25.388 HYPERVISOR: exec_cmd: nio create_udp udp-954a97b7-b5d1-4e90-acef-719289616379 10032 127.0.0.1 10034 
-Dec 07 11:50:25.413 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-954a97b7-b5d1-4e90-acef-719289616379 
-Dec 07 11:50:25.447 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-954a97b7-b5d1-4e90-acef-719289616379 1 
-Dec 07 12:01:30.814 HYPERVISOR: exec_cmd: ethsw delete SW9 
-Dec 07 12:01:30.886 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 07 12:01:31.095 HYPERVISOR: Stopped.
-Dec 07 12:01:31.095 GENERAL: reset done.
+Dec 09 12:18:10.884 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 09 12:18:10.884 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51864.
+Dec 09 12:18:10.932 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 09 12:18:10.936 HYPERVISOR: exec_cmd: hypervisor working_dir /home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips 
+Dec 09 12:18:10.936 GENERAL: working_dir=/home/afonsocaetano/GNS3/projects/ISP-Network/project-files/dynamips
+Dec 09 12:18:10.946 HYPERVISOR: exec_cmd: vm create PC6 22 c3725 
+Dec 09 12:18:10.947 VM: VM PC6 created.
+Dec 09 12:18:10.950 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC6 5011 
+Dec 09 12:18:10.951 HYPERVISOR: exec_cmd: c3725 get_mac_addr PC6 
+Dec 09 12:18:10.952 HYPERVISOR: exec_cmd: vm set_nvram PC6 256 
+Dec 09 12:18:10.953 HYPERVISOR: exec_cmd: vm set_disk0 PC6 0 
+Dec 09 12:18:10.954 HYPERVISOR: exec_cmd: c3725 set_mac_addr PC6 c216.354d.0000 
+Dec 09 12:18:10.955 HYPERVISOR: exec_cmd: vm get_status PC6 
+Dec 09 12:18:10.958 HYPERVISOR: exec_cmd: vm set_idle_pc PC6 0x60a68e70 
+Dec 09 12:18:10.960 HYPERVISOR: exec_cmd: vm set_ios PC6 /home/afonsocaetano/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 09 12:18:10.961 HYPERVISOR: exec_cmd: vm set_config PC6 configs/i22_startup-config.cfg 
+Dec 09 12:18:11.762 HYPERVISOR: exec_cmd: nio create_udp udp-581d91f3-654c-4d39-ac8f-18634f4fc094 10037 127.0.0.1 10036 
+Dec 09 12:18:11.764 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC6 0 0 udp-581d91f3-654c-4d39-ac8f-18634f4fc094 
+Dec 09 12:18:11.777 HYPERVISOR: exec_cmd: vm get_status PC6 
+Dec 09 12:19:54.584 HYPERVISOR: exec_cmd: vm get_status PC6 
+Dec 09 12:19:54.599 HYPERVISOR: exec_cmd: vm extract_config PC6 
+Dec 09 12:19:54.614 HYPERVISOR: exec_cmd: vm delete PC6 
+Dec 09 12:19:54.614 VM: VM PC6 destroyed.
+Dec 09 12:19:54.627 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 09 12:19:55.027 HYPERVISOR: Stopped.
+Dec 09 12:19:55.027 GENERAL: reset done.
