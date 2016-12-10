@@ -22,6 +22,22 @@ ipv6 add 2001:db8:3:99::9/64
 ipv6 ospf 1 area 4
 no shut
 
+int tunnel 0
+ipv6 add 3000:1:1:1:1:1:1:9/112
+no shut
+ipv6 rip 6bone enable
+tunnel source fastEthernet 0/1
+tunnel destination 201.3.0.18
+tunnel mode ipv6ip
+
+int tunnel 1
+Ipv6 add 3001:1:1:1:1:1:1:9/112 
+no shut
+ipv6 rip 6bone enable
+tunnel source fastEthernet 0/0
+tunnel destination 201.3.0.2
+tunnel mode ipv6ip
+
 router ospf 1
 router-id 9.9.9.9
 network 201.3.4.0 0.0.0.63 area 4
