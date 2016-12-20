@@ -1,34 +1,44 @@
-Dec 07 18:14:09.046 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Dec 07 18:14:09.046 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47814.
-Dec 07 18:14:09.067 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 07 18:14:09.068 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/GNS3/projects/ProjPart1/project-files/dynamips 
-Dec 07 18:14:09.068 GENERAL: working_dir=/home/bruno/GNS3/projects/ProjPart1/project-files/dynamips
-Dec 07 18:14:09.073 HYPERVISOR: exec_cmd: vm create Sw11 13 c3725 
-Dec 07 18:14:09.074 VM: VM Sw11 created.
-Dec 07 18:14:09.082 HYPERVISOR: exec_cmd: vm set_con_tcp_port Sw11 5016 
-Dec 07 18:14:09.083 HYPERVISOR: exec_cmd: c3725 get_mac_addr Sw11 
-Dec 07 18:14:09.084 HYPERVISOR: exec_cmd: vm set_nvram Sw11 256 
-Dec 07 18:14:09.085 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:09.086 HYPERVISOR: exec_cmd: vm slot_add_binding Sw11 1 0 NM-16ESW 
-Dec 07 18:14:09.087 HYPERVISOR: exec_cmd: vm set_ios Sw11 /home/bruno/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Dec 07 18:14:09.088 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:09.112 HYPERVISOR: exec_cmd: vm set_idle_pc Sw11 0x60a68e70 
-Dec 07 18:14:09.129 HYPERVISOR: exec_cmd: vm set_disk0 Sw11 1 
-Dec 07 18:14:09.131 HYPERVISOR: exec_cmd: c3725 set_mac_addr Sw11 c20d.10a6.0000 
-Dec 07 18:14:09.137 HYPERVISOR: exec_cmd: vm set_config Sw11 configs/i13_startup-config.cfg 
-Dec 07 18:14:09.842 HYPERVISOR: exec_cmd: nio create_udp udp-bd957e13-f0b4-4d48-af9d-5e7c1b79e889 10032 127.0.0.1 10033 
-Dec 07 18:14:09.843 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 1 udp-bd957e13-f0b4-4d48-af9d-5e7c1b79e889 
-Dec 07 18:14:09.843 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:09.862 HYPERVISOR: exec_cmd: nio create_udp udp-befb7c80-ceaf-4211-9ec3-ad40549183e9 10034 127.0.0.1 10035 
-Dec 07 18:14:09.863 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 2 udp-befb7c80-ceaf-4211-9ec3-ad40549183e9 
-Dec 07 18:14:09.867 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:09.894 HYPERVISOR: exec_cmd: nio create_udp udp-cbf905fe-bd87-44b3-af60-5cb6cfc01471 10037 127.0.0.1 10036 
-Dec 07 18:14:09.894 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Sw11 1 0 udp-cbf905fe-bd87-44b3-af60-5cb6cfc01471 
-Dec 07 18:14:09.898 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:16.736 HYPERVISOR: exec_cmd: vm get_status Sw11 
-Dec 07 18:14:16.741 HYPERVISOR: exec_cmd: vm extract_config Sw11 
-Dec 07 18:14:16.747 HYPERVISOR: exec_cmd: vm delete Sw11 
-Dec 07 18:14:16.747 VM: VM Sw11 destroyed.
-Dec 07 18:14:16.756 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 07 18:14:17.073 HYPERVISOR: Stopped.
-Dec 07 18:14:17.073 GENERAL: reset done.
+Dec 07 23:27:41.543 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 07 23:27:41.544 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51107.
+Dec 07 23:27:41.595 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 07 23:27:41.598 HYPERVISOR: exec_cmd: hypervisor working_dir /home/joao/code/Network-Arquitecture/part2/project-files/dynamips 
+Dec 07 23:27:41.598 GENERAL: working_dir=/home/joao/code/Network-Arquitecture/part2/project-files/dynamips
+Dec 07 23:27:41.602 HYPERVISOR: exec_cmd: vm create R5 1 c3725 
+Dec 07 23:27:41.602 VM: VM R5 created.
+Dec 07 23:27:41.605 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
+Dec 07 23:27:41.608 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Dec 07 23:27:41.611 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 16 WIC-2T 
+Dec 07 23:27:41.614 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Dec 07 23:27:41.618 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c201.1033.0000 
+Dec 07 23:27:41.621 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:41.625 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Dec 07 23:27:41.628 HYPERVISOR: exec_cmd: vm set_ios R5 /home/joao/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Dec 07 23:27:41.631 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Dec 07 23:27:41.645 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:41.681 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60a6a390 
+Dec 07 23:27:41.725 HYPERVISOR: exec_cmd: vm set_config R5 configs/i1_startup-config.cfg 
+Dec 07 23:27:42.999 HYPERVISOR: exec_cmd: nio create_udp udp-32467fd1-3c12-420c-b54d-8bc0dd64da02 10028 127.0.0.1 10029 
+Dec 07 23:27:43.001 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-32467fd1-3c12-420c-b54d-8bc0dd64da02 
+Dec 07 23:27:43.011 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:43.061 HYPERVISOR: exec_cmd: nio create_udp udp-9cc2793a-eaef-49cf-9aa4-0ca0523200f3 10030 127.0.0.1 10031 
+Dec 07 23:27:43.072 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-9cc2793a-eaef-49cf-9aa4-0ca0523200f3 
+Dec 07 23:27:43.082 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:43.452 HYPERVISOR: exec_cmd: nio create_udp udp-269601f8-2878-4fe7-84e6-b60fff3e3254 10050 127.0.0.1 10051 
+Dec 07 23:27:43.470 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-269601f8-2878-4fe7-84e6-b60fff3e3254 
+Dec 07 23:27:43.473 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:58.663 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:58.665 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 0 1 
+Dec 07 23:27:58.669 HYPERVISOR: exec_cmd: nio delete udp-32467fd1-3c12-420c-b54d-8bc0dd64da02 
+Dec 07 23:27:58.714 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:58.716 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 1 0 
+Dec 07 23:27:58.717 HYPERVISOR: exec_cmd: nio delete udp-9cc2793a-eaef-49cf-9aa4-0ca0523200f3 
+Dec 07 23:27:58.757 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:58.759 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 0 0 
+Dec 07 23:27:58.763 HYPERVISOR: exec_cmd: nio delete udp-269601f8-2878-4fe7-84e6-b60fff3e3254 
+Dec 07 23:27:58.807 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 07 23:27:58.810 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 07 23:27:58.813 HYPERVISOR: exec_cmd: vm delete R5 
+Dec 07 23:27:58.813 VM: VM R5 destroyed.
+Dec 07 23:27:58.814 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 07 23:27:59.099 HYPERVISOR: Stopped.
+Dec 07 23:27:59.099 GENERAL: reset done.
