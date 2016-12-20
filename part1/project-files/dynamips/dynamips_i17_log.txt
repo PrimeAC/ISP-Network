@@ -1,0 +1,22 @@
+Dec 11 20:31:31.718 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Dec 11 20:31:31.718 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51229.
+Dec 11 20:31:31.768 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 20:31:31.769 HYPERVISOR: exec_cmd: hypervisor working_dir /home/bruno/Documents/ISP-Network/part1/project-files/dynamips 
+Dec 11 20:31:31.769 GENERAL: working_dir=/home/bruno/Documents/ISP-Network/part1/project-files/dynamips
+Dec 11 20:31:31.770 HYPERVISOR: exec_cmd: ethsw create SW9 
+Dec 11 20:31:32.482 HYPERVISOR: exec_cmd: nio create_udp udp-db885370-5029-4686-810e-cb0064b82043 10033 127.0.0.1 10031 
+Dec 11 20:31:32.483 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-db885370-5029-4686-810e-cb0064b82043 
+Dec 11 20:31:32.501 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-db885370-5029-4686-810e-cb0064b82043 1 
+Dec 11 20:31:32.506 HYPERVISOR: exec_cmd: nio create_udp udp-7230b346-0b97-4b27-90ae-cf178d88ff74 10035 127.0.0.1 10034 
+Dec 11 20:31:32.510 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-7230b346-0b97-4b27-90ae-cf178d88ff74 
+Dec 11 20:31:32.522 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-7230b346-0b97-4b27-90ae-cf178d88ff74 1 
+Dec 11 20:31:32.574 HYPERVISOR: exec_cmd: nio create_udp udp-c031ec12-d42e-41af-b745-0bef74e7cc30 10043 127.0.0.1 10042 
+Dec 11 20:31:32.574 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-c031ec12-d42e-41af-b745-0bef74e7cc30 
+Dec 11 20:31:32.583 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-c031ec12-d42e-41af-b745-0bef74e7cc30 1 
+Dec 11 20:31:32.592 HYPERVISOR: exec_cmd: nio create_udp udp-9645ca7f-bab4-41d2-b843-cb0094be36cd 10044 127.0.0.1 10045 
+Dec 11 20:31:32.592 HYPERVISOR: exec_cmd: ethsw add_nio SW9 udp-9645ca7f-bab4-41d2-b843-cb0094be36cd 
+Dec 11 20:31:32.603 HYPERVISOR: exec_cmd: ethsw set_access_port SW9 udp-9645ca7f-bab4-41d2-b843-cb0094be36cd 1 
+Dec 11 20:35:52.172 HYPERVISOR: exec_cmd: ethsw delete SW9 
+Dec 11 20:35:52.251 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 20:35:52.464 HYPERVISOR: Stopped.
+Dec 11 20:35:52.464 GENERAL: reset done.
